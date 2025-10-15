@@ -1,0 +1,9 @@
+[package]
+name = "diesel_last_insert_id"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+diesel = { version = "2.3", features = ["mysql", "chrono"] }
+diesel-async = { version = "0.7", features = ["mysql", "deadpool"] }
+tokio = { version = "1", features = ["full"] }
